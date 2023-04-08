@@ -21,7 +21,7 @@ jobs:
       name: ${{ github.ref_name }}
       url: ${{ steps.deploy.outputs.vm_url }}
     steps:
-      - name: Docker PUll & Run From Hub
+      - name: Docker Pull & Run From Hub
         uses: appleboy/ssh-action@master
         with:
           host: ec2-16-170-37-208.eu-north-1.compute.amazonaws.com
@@ -29,7 +29,6 @@ jobs:
           key: ${{secrets.ACTION_PRIVATE_KEY}}
           envs: GITHUB_SHA
           script: |
-            docker login
             docker pull fdepalma95/my_page
             docker stop my_page
             docker rm my_page
