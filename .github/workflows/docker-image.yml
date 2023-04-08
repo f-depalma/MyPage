@@ -29,7 +29,7 @@ jobs:
           key: ${{secrets.ACTION_PRIVATE_KEY}}
           envs: GITHUB_SHA
           script: |
-            docker pull fdepalma95/my_page
-            docker stop my_page
-            docker rm my_page
-            docker run --detach --name my_page -p 80:3000 fdepalma95/my_page
+            sudo docker pull fdepalma95/my_page
+            sudo docker stop my_page
+            sudo docker rm my_page
+            sudo docker run --detach --name my_page -p 80:3000 fdepalma95/my_page
