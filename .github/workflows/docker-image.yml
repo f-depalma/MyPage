@@ -13,10 +13,6 @@ on:
   push:
     branches: ['main']
 
-env:
-  REGISTRY: fdepalma95
-  IMAGE_NAME: ${{ github.repository }}
-
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
@@ -42,5 +38,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: fdepalma95/my_page:latest
