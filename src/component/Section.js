@@ -11,6 +11,7 @@ export default function Section({id, section, children}) {
     })
 
     const scrollPosition = useScrollPosition();
+    
 
     return (
         <section className={`${visible} + section h-screen w-screen`}>

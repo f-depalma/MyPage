@@ -5,8 +5,11 @@ import Content from './component/Content';
 function App() {
   return (
     <div className='text-gray-200'>
-      <Header/>
-      <Content/>
+      <Header />
+      <Content />
+      <div className='w-screen fixed top-24 left-0 h-24 flex justify-center' style={{backgroundColor: "#F4D546"}}>
+        <img src="work-in-progress.jpeg" className='w-96 object-cover'/>
+      </div>
     </div>
   );
 }
