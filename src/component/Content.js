@@ -10,7 +10,7 @@ export default function Content() {
     const sections = [
         <Section1 />,
         <Section2 />,
-        // <Section3 />
+        <Section3 />
     ]
 
     const screenHeight = useWindowHeight()

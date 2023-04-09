@@ -29,10 +29,10 @@ export function useVisibilities(element) {
 
     useEffect(() => {
         const section = Math.floor(scrollPosition / 1000)
-        const perc = (scrollPosition / 500) % 2
-        if (perc > 0.90) {
-            tuneVisibility(section, 2 - perc)
-            tuneVisibility(section + 1, perc - 1)
+        const perc = scrollPosition % 1000 / 1000
+        if (perc > 0) {
+            tuneVisibility(section, 1 - perc)
+            tuneVisibility(section + 1, perc)
         }
 
     }, [scrollPosition]);
