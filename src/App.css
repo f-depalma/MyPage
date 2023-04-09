@@ -1,6 +1,32 @@
 .face-image {
   height: 80%;
   position: absolute;
+  top: 150px;
   left: -200px;
-  opacity: 0.8;
+  opacity: 0.6;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.section {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.section-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 1s linear;
+}
+
+.section-hide {
+  visibility: hidden;
+  opacity: 0;
 }

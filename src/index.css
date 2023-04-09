@@ -1,12 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
 body {
-  font-family: ProximaNovaRegular,Helvetica,Arial,sans-serif;
+  font-family: 'Montserrat';
 }
 
 #root {
   background-color: black;
+  overflow: hidden
 }
