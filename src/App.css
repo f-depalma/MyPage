@@ -31,6 +31,15 @@
   opacity: 0;
 }
 
-.skill {
+.skill, .product {
   min-width: 20rem;
+}
+
+.companies {
+  background-color: #eee;
+}
+
+.product:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }

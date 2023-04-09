@@ -11,14 +11,14 @@ export class Visibility {
     }
 
     setVisibility(value) {
-        this.visibility = value ? 'visible' : 'hidden'
-        this.opacity = value
+        this.visibility = value > 0.2 ? 'visible' : 'hidden'
+        this.opacity = value > 0.85? 1 : value < 0.15 ? 0 : value
     }
 
     getCss() {
         return {
             visibility: this.visibility,
-            opacity: this.opacity
+            opacity: this.opacity,
         }
     }
 }
