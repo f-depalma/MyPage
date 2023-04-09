@@ -1,1 +1,6 @@
-
+.face-image {
+  height: 80%;
+  position: absolute;
+  left: -200px;
+  opacity: 0.8;
+}
