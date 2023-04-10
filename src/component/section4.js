@@ -5,12 +5,14 @@ export default function Section4() {
 
     return (
         <div className="bg-black flex flex-col justify-end sm:justify-center items-start p-16 h-full overflow-x-scroll">
-            <img src="Subject.png" className="top-32 right-6 rounded-full h-20 sm:h-32 xl:rounded-none xl:top-auto xl:object-cover fixed xl:bottom-0 xl:right-20 xl:h-4/6 xl:opacity-70 z-0" />
+            <div className="top-32 right-6 rounded-full h-20 w-20 sm:h-32 sm:w-32 lg:rounded-none lg:top-auto fixed lg:bottom-0 lg:right-20 lg:h-4/6 lg:w-full lg:opacity-70 z-0 overflow-hidden lg:overflow-visible">
+                <img src="Subject.png" className="lg:object-contain h-full float-right" />
+            </div>
             <div className="flex flex-row sm:flex-col justify-start items-center">
                 <div className="pr-8">
                     <img src="VIA-logo.png" className="w-80 z-10"></img>
                     <h1 className="text-2xl pt-10 font-bold text-zinc-300 z-10">Software Technology Engineering</h1>
-                    <h2>3° Semester</h2>
+                    <h2>3<sup>rd</sup> Semester</h2>
                 </div>
                 <div className="scale-75 sm:scale-100 flex flex-col pt-8 z-10 align-baseline">
                     <div className="overflow-x-auto">
