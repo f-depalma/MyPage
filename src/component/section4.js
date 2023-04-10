@@ -19,7 +19,7 @@ export default function Section4() {
                         <div className="p-1.5 w-full inline-block align-middle">
                             <div className="overflow-hidden rounded">
                                 <table className="min-w-full">
-                                    <thead style={{ backgroundColor: "#bc8b00" }}>
+                                    <thead className="bg-yellow-600">
                                         <tr>
                                             <th scope="col"
                                                 className={headerClass}>Exam</th>
