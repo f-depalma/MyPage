@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Visibility } from "../Utils/Visibility";
 import useScrollPosition from "./scroll-position"
 
+
 export function useVisibilities(element) {
 
     const _visibilities = []
@@ -29,12 +30,13 @@ export function useVisibilities(element) {
 
     useEffect(() => {
         const section = Math.floor(scrollPosition / 1000)
+
         const perc = scrollPosition % 1000 / 1000
+
         if (perc > 0) {
             tuneVisibility(section, 1 - perc)
             tuneVisibility(section + 1, perc)
         }
-
     }, [scrollPosition]);
 
     return visibilities;
