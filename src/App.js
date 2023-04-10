@@ -7,7 +7,7 @@ function App() {
     <div className='text-gray-200'>
       <Header />
       <Content />
-      <div className='w-screen fixed top-24 left-0 h-24 flex justify-center' style={{backgroundColor: "#F4D546"}}>
+      <div className='w-screen fixed top-28 sm:top-24 left-0 h-16  sm:h-24 flex justify-center' style={{backgroundColor: "#F4D546"}}>
         <img src="work-in-progress.jpeg" className='w-96 object-cover'/>
       </div>
     </div>
