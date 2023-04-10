@@ -5,6 +5,7 @@ import Section2 from "./Section2"
 import Section3 from "./Section3"
 import Section4 from "./section4"
 import { useVisibilities } from "../hooks/visibilities"
+import Section5 from "./Section5"
 
 export default function Content() {
 
@@ -12,7 +13,8 @@ export default function Content() {
         <Section1 />,
         <Section2 />,
         <Section3 />,
-        <Section4 />
+        <Section4 />,
+        <Section5 />
     ]
 
     const screenHeight = useWindowHeight()
