@@ -54,6 +54,6 @@ jobs:
             sudo docker stop my_page
             sudo docker rm my_page
             sudo docker image prune -a
-            send "y"
+            expect "Are you sure you want to continue? [y/N] Total reclaimed space: 0B" { send "y" }
             sudo docker pull fdepalma95/my_page
             sudo docker run --detach --name my_page -p 80:3000 fdepalma95/my_page
