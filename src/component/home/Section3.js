@@ -1,4 +1,4 @@
-import { companies } from "../resurce/companies"
+import { companies } from "../../resurce/companies"
 import Product from "./Product"
 
 export default function Section3() {

@@ -1,4 +1,4 @@
-import { reviews } from "../resurce/reviews"
+import { reviews } from "../../resurce/reviews"
 import Review from "./Review"
 
 export default function Section5() {

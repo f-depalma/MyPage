@@ -40,11 +40,5 @@ export default function Section7() {
                 </div>
             </div>
         </div>
-        // linkedin
-        // github
-        // made with react
-        // CD: Github action
-        // Server: AWS ec2 (linux)
-        // Run in a docker container
     )
 }

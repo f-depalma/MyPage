@@ -1,4 +1,4 @@
-import { skills } from "../resurce/skills"
+import { skills } from "../../resurce/skills"
 import Skill from "./Skill"
 
 export default function Section2() {
