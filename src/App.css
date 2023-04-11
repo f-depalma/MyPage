@@ -13,12 +13,6 @@
   width: 100%;
 }
 
-.section {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .section-visible {
   visibility: visible;
   opacity: 1;
