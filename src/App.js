@@ -1,15 +1,23 @@
 import './App.css';
-import Header from './component/Header';
-import Content from './component/Content';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './component/home/Home';
+import Header from './component/Header'
+import ContactMe from './component/contact-me/ContactMe';
+import Others from './component/others/Others';
+import MyProjects from './component/my-projects/MyProjects';
 
 function App() {
   return (
-    <div className='text-gray-200'>
+    <div>
       <Header />
-      <Content />
-      <div className='w-screen fixed bottom-0 left-0 h-16  sm:h-24 flex justify-center' style={{backgroundColor: "#F4D546"}}>
-        <img src="work-in-progress.jpeg" className='w-96 object-cover'/>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="contact-me" element={<ContactMe />} />
+          <Route path="others" element={<Others />} />
+          <Route path="my-projects" element={<MyProjects />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

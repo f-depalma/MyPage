@@ -1,15 +1,15 @@
-import { useWindowHeight } from "../hooks/window-height"
+import { useWindowHeight } from "../../hooks/window-height"
 import Section from "./Section"
 import Section1 from "./Section1"
 import Section2 from "./Section2"
 import Section3 from "./Section3"
 import Section4 from "./section4"
-import { useVisibilities } from "../hooks/visibilities"
+import { useVisibilities } from "../../hooks/visibilities"
 import Section5 from "./Section5"
 import Section6 from "./Section6"
 import Section7 from "./Section7"
 
-export default function Content() {
+export default function Home() {
 
     const sections = [
         <Section1 />,
@@ -40,8 +40,11 @@ export default function Content() {
     }
 
     return (
-        <main className="w-screen bg-black" style={{ height: height }}>
+        <main className="w-screen bg-black text-gray-200" style={{ height: height }}>
             {contents}
+            <div className='w-screen fixed bottom-0 left-0 h-16  sm:h-24 flex justify-center' style={{ backgroundColor: "#F4D546" }}>
+                <img src="work-in-progress.jpeg" className='w-96 object-cover' />
+            </div>
         </main>
     )
 }
