@@ -1,6 +1,6 @@
 export default function Section7() {
     return (
-        <div className="h-full px-10 sm:px-16 flex flex-col justify-center items-center">
+        <div className="h-full px-6 sm:px-16 flex flex-col justify-center items-center">
             <div className="w-4/5 lg:pl-60 flex flex-col items-baseline flex-wrap justify-center overflow-x-scroll">
                 <div className="h-16 flex flex-row items-center mb-3">
                     <img className="h-16" src="linkedin.webp" />
