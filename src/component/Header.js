@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Header() {
     return (
         <nav id="header" className="h-24 flex flex-col items-center sm:flex-row sm:justify-between bg-black z-50">
@@ -12,7 +14,7 @@ export default function Header() {
                     <a href="/others">Others</a>
                 </div>
                 <div className="px-6 sm:px-6 py-2 flex flex-col justify-center bg-yellow-600 text-black rounded nav--item hover:text-white hover:bg-zinc-800 hover:cursor-pointer text-xs sm:text-base">
-                    <a href="/contact-me">Contact Me</a>
+                    <Link to="/contact-me">Contact Me</Link>
                 </div>
             </div>
         </nav>
