@@ -1,5 +1,50 @@
 export default function Section7() {
-    return(
-        <div></div>
+    return (
+        <div className="h-full px-10 sm:px-16 flex flex-col justify-center items-center">
+            <div className="w-4/5 lg:pl-60 flex flex-col items-baseline flex-wrap justify-center overflow-x-scroll">
+                <div className="h-16 flex flex-row items-center mb-3">
+                    <img className="h-16" src="linkedin.webp" />
+                    <h4 className="text-xl hover:text-yellow-600">
+                        <a href="https://www.linkedin.com/in/f-de-palma/" target="_blank">Francesco De Palma</a>
+                    </h4>
+                </div>
+                <div className="h-16 flex flex-row items-center mb-3">
+                    <img className="h-9 p-1 rounded bg-white m-4" src="github.png" />
+                    <h4 className="text-xl hover:text-yellow-600">
+                        <a href="https://github.com/f-depalma" target="_blank">My projects</a>
+                    </h4>
+                </div>
+                <div className="h-16 flex flex-row items-center mb-3">
+                    <img className="h-9 p-1 rounded bg-white m-4" src="react-icon.svg" />
+                    <h4 className="text-xl hover:text-yellow-600">
+                        <a href="https://react.dev/" target="_blank">Made with React</a>
+                    </h4>
+                </div>
+                <div className="h-16 flex flex-row items-center mb-3">
+                    <img className="h-9 p-1 rounded bg-white m-4" src="gh-action.png" />
+                    <h4 className="text-xl hover:text-yellow-600">
+                        <a href="https://github.com/f-depalma/my_page/tree/main/.github/workflows" target="_blank">CD managed by GitHub Action</a>
+                    </h4>
+                </div>
+                <div className="h-16 flex flex-row items-center mb-3">
+                    <img className="h-9 rounded bg-white m-4" src="aws.png" />
+                    <h4 className="text-xl hover:text-yellow-600">
+                        <a href="https://aws.amazon.com/ec2/" target="_blank">Deployed on AWS EC2 instance</a>
+                    </h4>
+                </div>
+                <div className="h-16 flex flex-row items-center mb-3">
+                    <img className="h-9 w-9 object-contain rounded bg-white m-4" src="docker.png" />
+                    <h4 className="text-xl hover:text-yellow-600">
+                        <a href="https://hub.docker.com/r/fdepalma95/my_page" target="_blank">Running in a docker container</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        // linkedin
+        // github
+        // made with react
+        // CD: Github action
+        // Server: AWS ec2 (linux)
+        // Run in a docker container
     )
 }
